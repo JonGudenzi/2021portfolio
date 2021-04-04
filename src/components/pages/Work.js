@@ -1,42 +1,43 @@
-// import React, { useState } from "react";
-// // import "./Work.css";
+import React from "react";
+import WorkData from './WorkData';
 
-// function Work(props) {
+function Work() {
 
-//     const { workData } = props
-//     return (
-//         <div>
-//             <div className="row justify-content-around my-row">
-//             <div className="col-md-3 my-col">
-//                 <h1 id="work">Work</h1>
-//                 </div>
+    return (
+        <div>
+            <h1 className="col-12 text-center">Work</h1>
+            
+            <div className="row my-row">
+                {WorkData.map((data, index) => {
 
-//                 {workData.map((data, index) => {
-//                     return (
-//                         <div key={index} className="workItem col-md-4 my-col">
+                    return (  
+                        <div className="flexParent col-6"> 
+                        <div className="flexItems text-center">
+                        <div key={index} className="workItem row-6">
+                            <p>{data.desc}</p>
+                            <a href={data.app}
+                                target={data.app}>
+                                <div className="title">
+                                    <h3>{data.title}</h3>
+                                    <p>{data.language}</p>
+                                </div>
+                            </a>
+                            <div className="githubLink">
+                                <a href={data.github}
+                                    target={data.github}>
+                                    <p className="githubText">Github Repo</p>
+                                </a>
+                            </div>
 
-//                             <p>{data.desc}</p>
-//                             <a href={data.github}
-//                                 target={data.github}>
-//                                 <div className="title">
-//                                     <h3>{data.title}</h3>
-//                                     <p>{data.language}</p>
-//                                 </div>
-//                             </a>
-//                             <div className="githubLink">
-//                                 <a href={data.github}
-//                                     target={data.github}>
-//                                     <p className="githubText">Github Repo</p>
-//                                 </a>
-//                             </div>
-
-//                         </div>
-//                     )
-//                 })}
+                        </div>
+                        </div>
+                        </div>
+                    )
+                })}
                 
-//                 </div> 
-//         </div>
-//     )
-// }
+                </div> 
+        </div>
+    )
+}
 
-// export default Work;
+export default Work;

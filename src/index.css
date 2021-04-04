@@ -17,7 +17,34 @@ code {
   justify-content: flex-end;
 }
 
+.aboutFlexParent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .aboutMe{
   border: 3px solid black;
+}
 
+.flexParent{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+}
+
+
+.flexItems{
+  position: relative;
+  width: 100%;
+  /* justify-content: center; */
+ border: 3px solid black;
+ margin-bottom: 15px;
+ 
+}
+
+.workItem{
+  
 }
