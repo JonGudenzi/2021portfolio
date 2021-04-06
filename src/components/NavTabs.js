@@ -7,17 +7,18 @@ function NavTabs() {
   const location = useLocation();
 
   return (
+    <div style={{backgroundColor: "black"}}>
           <ul className="nav nav">
-              <h1 className="col-10 jonName">Jon Gudenzi</h1>
+              <h1 style={{color: "white"}} className="col-9 jonName">Jon Gudenzi</h1>
       <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+        <Link style={{color: "white", fontSize: '21px'}} to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
           Home
         </Link>
       </li>
       <li className="nav-item">
       </li>
       <li className="nav-item">
-        <Link
+        <Link style={{color: "white", fontSize: '21px'}}
           to="/work"
           className={location.pathname === "/work" ? "nav-link active" : "nav-link"}
         >
@@ -25,7 +26,7 @@ function NavTabs() {
         </Link>
       </li>
       <li className="nav-item">
-        <Link
+        <Link style={{color: "white", fontSize: '21px'}}
           to="/contact"
           className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
         >
@@ -33,6 +34,7 @@ function NavTabs() {
         </Link>
       </li>
     </ul>
+    </div>
   );
 }
 
