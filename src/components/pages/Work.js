@@ -5,12 +5,12 @@ import bg from "../../assets/img/bg2.jpg";
 function Work() {
 
     return (
-        <div style={{
+        <div className="img-responsive" style={{
             backgroundImage: `url(${bg})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            width: '100vw',
-            height: '100vh'
+            width: 'auto',
+            height: 'auto'
         }}>
             <div>
                 <h1 className="col-12 text-center">Work</h1>
