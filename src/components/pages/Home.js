@@ -18,10 +18,12 @@ function Home() {
           alt="Jon Gudenzi"
           className="selfImg "
         />
-
-        <p className="col-8 text-center aboutMe ">
+      
+      <p className="col-7 text-center aboutMe flexItems">
           I am an aspiring developer who currently works a full time job in inventory and logistics. I have been with my current employer for 15 years and have peaked at performance and growth within the organization. I've chosen a new career path in computer programming with a focus on web development because I enjoy the challenging and creative outlet.
       </p>
+    
+        
       </div>
     </div>
   );

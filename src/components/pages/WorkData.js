@@ -1,3 +1,8 @@
+
+import Burger from '../../assets/img/burgerApp.PNG';
+
+
+
 const WorkData = [
     {
         title: "Employee-Summary",
@@ -26,6 +31,7 @@ const WorkData = [
     {
         title: "Burger Logger",
         language: "MySQL database",
+        image: Burger,
         github: "https://github.com/JonGudenzi/Burger-Logger",
         app: "https://burger-logger-gudenzi.herokuapp.com/",
         desc: "The Burger Logger allows a user to create new burgers then devour them. This application uses MySQL to hold and create the data. Technologies: HTML, CSS, Bootstrap, JavaScript, Jquery, MySQL, Handlebars"
