@@ -15,14 +15,13 @@ function Work() {
             <div>
                 <h1 className="col-12 text-center">Work</h1>
             </div>
-            <div className="row my-row py-4 ">
+            <div className="row py-4 col-10 ">
                 {WorkData.map((data, index) => {
                     return (
-                        <div className=" col-6 mb-4 ">
-                            <div className="card text-center h-100">
+                        <div className=" col-6 mb-5 ">
+                            <div className="card text-center h-100 ">
                                 <div key={index} className="card">
                                     <img
-                                        className=""
                                         src={data.image}
                                         alt={data.title}
                                     />
