@@ -15,13 +15,17 @@ function Work() {
             <div>
                 <h1 className="col-12 text-center">Work</h1>
             </div>
-            <div className="row my-row">
+            <div className="row my-row py-4 ">
                 {WorkData.map((data, index) => {
                     return (
-                        <div className="flexParent col-6">
-                            <div className="flexItems text-center">
-                                <div key={index} className="workItem row-6">
-                                    <img style={{ backgroundImage: `url${data.image}` }}></img>
+                        <div className=" col-6 mb-4 ">
+                            <div className="card text-center h-100">
+                                <div key={index} className="card">
+                                    <img
+                                        className=""
+                                        src={data.image}
+                                        alt={data.title}
+                                    />
                                     <p>{data.desc}</p>
                                     <a href={data.app}
                                         target={data.app}>
