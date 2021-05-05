@@ -1,6 +1,7 @@
 import React from "react";
 import WorkData from './WorkData';
 import bg from "../../assets/img/bg2.jpg";
+import Grid from "@material-ui/core/Grid";
 
 function Work() {
 
@@ -15,11 +16,11 @@ function Work() {
             <div>
                 <h1 className="col-12 text-center">Work</h1>
             </div>
-            <div className="row py-4 col-10 ">
+            <Grid container spacing={1} justifycontent="center" >
                 {WorkData.map((data, index) => {
                     return (
                         <div className=" col-6 mb-5 ">
-                            <div className="card text-center h-100 ">
+                            <div className=" card text-center h-100 ">
                                 <div key={index} className="card">
                                     <img
                                         src={data.image}
@@ -44,7 +45,7 @@ function Work() {
                         </div>
                     )
                 })}
-            </div>
+            </Grid>
         </div>
     )
 }
