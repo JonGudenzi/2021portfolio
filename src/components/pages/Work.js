@@ -19,17 +19,19 @@ function Work() {
             <Grid container spacing={1} justifycontent="center" >
                 {WorkData.map((data, index) => {
                     return (
-                        <div className=" col-6 mb-5 ">
-                            <div className=" card text-center h-100 ">
-                                <div key={index} className="card">
+                        <div className=" col-6 mb-5">
+                            <div style={{backgroundColor: "black"}} className=" card text-center h-10">
+                                <div style={{backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", color: "white"}}  key={index} className="card">
                                     <img
+                                        className="col-10"
                                         src={data.image}
                                         alt={data.title}
+                                        style={{alignSelf: 'center'}}
                                     />
                                     <p>{data.desc}</p>
                                     <a href={data.app}
                                         target={data.app}>
-                                        <div className="title">
+                                        <div className="title ">
                                             <h3>{data.title}</h3>
                                             <p>{data.language}</p>
                                         </div>
