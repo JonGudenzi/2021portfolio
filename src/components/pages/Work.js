@@ -19,8 +19,8 @@ function Work() {
             <Grid container spacing={1} style={{display: "flex", justifyContent: "center"}} >
                 {WorkData.map((data, index) => {
                     return (
-                        <div className=" col-5 mb-5 ">
-                            <div style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", minHeight: "600px",color: "white", padding: "20px"}}  className=" card text-center ">
+                        <div className=" col-5 mb-5 " key={index}>
+                            <div style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", minHeight: "70vh",color: "white", padding: "20px"}}  className=" card text-center ">
                                 
                                     <img
                                         className="col-10"
