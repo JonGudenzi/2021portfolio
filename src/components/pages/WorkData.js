@@ -4,6 +4,7 @@ import Employee from '../../assets/img/Employee-Summary.PNG';
 import MusicJunkies from '../../assets/img/musicJunkies.PNG';
 import PasswordGenerator from '../../assets/img/passwordGenerator.PNG';
 import WeatherDashboard from '../../assets/img/weatherDashboard.PNG';
+import workDay from '../../assets/img/workDay.PNG';
 
 const WorkData = [
     {
@@ -35,7 +36,7 @@ const WorkData = [
     {
         title: "Work Day Schedule",
         language: "MomentJS / Jquery",
-        image: Employee,
+        image: workDay,
         github: "https://github.com/JonGudenzi/Work_Day_Scheduler",
         app: "https://jongudenzi.github.io/Work_Day_Scheduler/",
         desc: "The work day scheduler allows a user to keep track of what they have to do in a day, hour by hour. The user can enter a note and click save where the message will be saved in the local storage for reference later. Technologies: HTML, CSS, Bootstrap, JavaScript, Jquery, MomentJS"
@@ -62,7 +63,7 @@ const WorkData = [
     {
         title: "Employee Directory",
         language: "React",
-        image: Employee,
+        image: workDay,
         github: "https://github.com/JonGudenzi/Employee-Directory",
         app: "https://jongudenzi.github.io/Employee-Directory/",
         desc: "This application will show a list of employees with information for each one including an image, name, phone number, email and age. The user will be able to search for an employee by typing in a piece of the persons name which will filter out others. The user will also be able to sort by their name."

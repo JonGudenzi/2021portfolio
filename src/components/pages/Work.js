@@ -23,10 +23,10 @@ function Work() {
                             <div style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", minHeight: "70vh",color: "white", padding: "20px"}}  className=" card text-center ">
                                 
                                     <img
-                                        className="col-10"
+                                        // className="col-10"
                                         src={data.image}
                                         alt={data.title}
-                                        style={{alignSelf: 'center'}}
+                                        style={{alignSelf: 'center', padding: "20px", height: "300px",width: "100%",  objectFit: "contain"}}
                                     />
                                     <p>{data.desc}</p>
                                     <a href={data.app}
