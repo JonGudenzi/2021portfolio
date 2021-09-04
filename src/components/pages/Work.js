@@ -16,12 +16,12 @@ function Work() {
             <div>
                 <h1 className="col-12 text-center">Work</h1>
             </div>
-            <Grid container spacing={1} justifycontent="center" >
+            <Grid container spacing={1} style={{display: "flex", justifyContent: "center"}} >
                 {WorkData.map((data, index) => {
                     return (
-                        <div className=" col-6 mb-5">
-                            <div style={{backgroundColor: "black"}} className=" card text-center h-10">
-                                <div style={{backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", color: "white"}}  key={index} className="card">
+                        <div className=" col-5 mb-5 ">
+                            <div style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", minHeight: "600px",color: "white", padding: "20px"}}  className=" card text-center ">
+                                
                                     <img
                                         className="col-10"
                                         src={data.image}
@@ -42,7 +42,7 @@ function Work() {
                                             <p className="githubText">Github Repo</p>
                                         </a>
                                     </div>
-                                </div>
+                                
                             </div>
                         </div>
                     )

@@ -1,7 +1,6 @@
 import React from "react";
 import bg from "../../assets/img/bg2.jpg";
 
-
 function Contact(props) {
   return (
     <div style={{
@@ -15,11 +14,12 @@ function Contact(props) {
       <div className="aboutFlexParent">
         <div className="col-7 text-center aboutMe flexItems">
           <div class="row justify-content-center my-row">
+          <div className="flexParent">
             <div class="col-md-6 my-col">
               <h1>Phone</h1>
-              <p class="phone">704-957-1641</p>
+              <p>704-957-1641</p>
             </div>
-            <div class="col-md-6 my-col email">
+            <div class="col-md-6 my-col">
               <h1>Email</h1>
               <a href="mailto:jongudenzi@gmail.com">jongudenzi@gmail.com</a>
             </div>
@@ -31,6 +31,7 @@ function Contact(props) {
             <div class="col-md-6 my-col github">
               <h1>GitHub</h1>
               <a href="https://github.com/JonGudenzi" target="https://github.com/JonGudenzi">JonGudenzi</a>
+            </div>
             </div>
           </div>
         </div>

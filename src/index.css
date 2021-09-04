@@ -31,7 +31,7 @@ ul li:hover{
   align-items: center;
   /* align-content: center; */
   flex-wrap: wrap;
-  
+ 
 }
 
 .selfImg{
@@ -42,17 +42,23 @@ ul li:hover{
   margin-right: 20px;
 }
 
-/* .flexParent{
+.flexParent{
+  width: fit-content;
+  word-wrap: break-word;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-} */
+  
+}
 
 .aboutMe{
   border: 3px solid black;
   
 }
+
+
+
 
 
 
