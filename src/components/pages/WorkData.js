@@ -7,6 +7,8 @@ import WeatherDashboard from '../../assets/img/weatherDashboard.PNG';
 import workDay from '../../assets/img/workDay.PNG';
 import codeQuiz from '../../assets/img/codeQuiz.PNG';
 import employeeDirectory from '../../assets/img/employeeDirectory.PNG';
+import fitnessTracker from '../../assets/img/fitnessTracker.PNG';
+import noteTaker from '../../assets/img/noteTaker.PNG';
 
 const WorkData = [
     {
@@ -71,17 +73,9 @@ const WorkData = [
         desc: "This application will show a list of employees with information for each one including an image, name, phone number, email and age. The user will be able to search for an employee by typing in a piece of the persons name which will filter out others. The user will also be able to sort by their name."
     },
     {
-        title: "React - Work Day Scheduler",
-        language: "React",
-        image: workDay,
-        github: "https://github.com/JonGudenzi/Work-Day-Scheduler-React",
-        app: "https://jongudenzi.github.io/Work-Day-Scheduler-React/",
-        desc: "This is a work day scheduler that has been refactored using React. The app allows a user to set tasks for each hour of the day. These tasks will be saved in local storage so if the user leaves the page and returns later the tasks that were saved will still display."
-    },
-    {
         title: "Workout Tracker",
         language: "MongoDB, NoSql, Mongoose, Express-js",
-        image: Employee,
+        image: fitnessTracker,
         github: "https://github.com/JonGudenzi/Workout-Tracker",
         app: "https://workout-tracker-gudenzi.herokuapp.com/?id=603d6e7d60a1570015f33680",
         desc: "The Workout-Tracker allows a user to view and create daily workouts. This app can log multiple exercises in a workout on any given day. It will also track the type of workout including weight, sets, reps, and duration. If a user does a cardio exercise they will also be able to track the distance traveled."
@@ -89,7 +83,7 @@ const WorkData = [
     {
         title: "Note Taker",
         language: "Node-js, heroku, database, express",
-        image: Employee,
+        image: noteTaker,
         github: "https://github.com/JonGudenzi/Note-Taker",
         app: "https://note-taker-jongudenzi.herokuapp.com/",
         desc: "This application allows a user to create notes. They can save them and refer back to them at any time. They can also delete any not at any time."
