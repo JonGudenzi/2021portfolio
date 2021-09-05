@@ -17,24 +17,21 @@ function Work() {
             <div>
                 <h1 className="col-12  text-center">Work</h1>
             </div>
-            <Grid container spacing={5}  >
+            <Grid container >
                 <Grid className="col-12"  item style={{display: "flex", justifyContent:"space-around", flexWrap:"wrap"}}>
                     
             {WorkData.map((data, index) => {
                 return (
-                    <Card className="col-5 mb-5" style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", color: "white", padding: "20px", alignContent: "center"}} >
-                    <div  key={index}>
+                    <Card key={index} className="col-5 mb-5" style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", color: "white", padding: "20px"}} >
                     
-                    <CardContent style={{alignItems:"center"}}>
+                    
+                    <CardContent style={{display:'flex', flexWrap:"wrap", justifyContent:'center'}}>
                         
-                                <div style={{alignContent:"center"}}
-                                        >
-
                                         <img
                                             className="col-8 "
                                             src={data.image}
                                             alt={data.title}
-                                            style={{ alignSelf: 'center' }}
+                                            // style={{ alignSelf: 'center' }}
                                         />
                                         <p>{data.desc}</p>
                                         <a href={data.app}
@@ -51,13 +48,10 @@ function Work() {
                                                 <p className="githubText">Github Repo</p>
                                             </a>
                                         </button>
-
-
-
                                    
-                                </div>
+                                
                                 </CardContent>
-                    </div>
+                    
                     
                     </Card>
                 )
