@@ -1,26 +1,35 @@
 {
   "files": {
-    "main.css": "/2021portfolio/static/css/main.cf7172e3.chunk.css",
-    "main.js": "/2021portfolio/static/js/main.fecb6579.chunk.js",
-    "main.js.map": "/2021portfolio/static/js/main.fecb6579.chunk.js.map",
+    "main.css": "/2021portfolio/static/css/main.a2938154.chunk.css",
+    "main.js": "/2021portfolio/static/js/main.1172b0c0.chunk.js",
+    "main.js.map": "/2021portfolio/static/js/main.1172b0c0.chunk.js.map",
     "runtime-main.js": "/2021portfolio/static/js/runtime-main.aa100524.js",
     "runtime-main.js.map": "/2021portfolio/static/js/runtime-main.aa100524.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/2021portfolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f6ee3fc8.chunk.js": "/2021portfolio/static/js/2.f6ee3fc8.chunk.js",
-    "static/js/2.f6ee3fc8.chunk.js.map": "/2021portfolio/static/js/2.f6ee3fc8.chunk.js.map",
+    "static/js/2.5a9a1177.chunk.js": "/2021portfolio/static/js/2.5a9a1177.chunk.js",
+    "static/js/2.5a9a1177.chunk.js.map": "/2021portfolio/static/js/2.5a9a1177.chunk.js.map",
     "index.html": "/2021portfolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/2021portfolio/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.cf7172e3.chunk.css.map": "/2021portfolio/static/css/main.cf7172e3.chunk.css.map",
-    "static/js/2.f6ee3fc8.chunk.js.LICENSE.txt": "/2021portfolio/static/js/2.f6ee3fc8.chunk.js.LICENSE.txt",
+    "static/css/main.a2938154.chunk.css.map": "/2021portfolio/static/css/main.a2938154.chunk.css.map",
+    "static/js/2.5a9a1177.chunk.js.LICENSE.txt": "/2021portfolio/static/js/2.5a9a1177.chunk.js.LICENSE.txt",
+    "static/media/Employee-Summary.46d2a9a6.PNG": "/2021portfolio/static/media/Employee-Summary.46d2a9a6.PNG",
     "static/media/bg2.0cf2e2d3.jpg": "/2021portfolio/static/media/bg2.0cf2e2d3.jpg",
     "static/media/burgerApp.2eb3e842.PNG": "/2021portfolio/static/media/burgerApp.2eb3e842.PNG",
-    "static/media/self.9aea56e4.jpg": "/2021portfolio/static/media/self.9aea56e4.jpg"
+    "static/media/codeQuiz.8b9e3584.PNG": "/2021portfolio/static/media/codeQuiz.8b9e3584.PNG",
+    "static/media/employeeDirectory.6f5daf6a.PNG": "/2021portfolio/static/media/employeeDirectory.6f5daf6a.PNG",
+    "static/media/fitnessTracker.1167ffc6.PNG": "/2021portfolio/static/media/fitnessTracker.1167ffc6.PNG",
+    "static/media/musicJunkies.08439fdd.PNG": "/2021portfolio/static/media/musicJunkies.08439fdd.PNG",
+    "static/media/noteTaker.a551e44e.PNG": "/2021portfolio/static/media/noteTaker.a551e44e.PNG",
+    "static/media/passwordGenerator.5aa206e8.PNG": "/2021portfolio/static/media/passwordGenerator.5aa206e8.PNG",
+    "static/media/self.9aea56e4.jpg": "/2021portfolio/static/media/self.9aea56e4.jpg",
+    "static/media/weatherDashboard.22bd500a.PNG": "/2021portfolio/static/media/weatherDashboard.22bd500a.PNG",
+    "static/media/workDay.4e6eb585.PNG": "/2021portfolio/static/media/workDay.4e6eb585.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.aa100524.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f6ee3fc8.chunk.js",
-    "static/css/main.cf7172e3.chunk.css",
-    "static/js/main.fecb6579.chunk.js"
+    "static/js/2.5a9a1177.chunk.js",
+    "static/css/main.a2938154.chunk.css",
+    "static/js/main.1172b0c0.chunk.js"
   ]
 }
