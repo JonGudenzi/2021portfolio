@@ -2,6 +2,7 @@ import React from "react";
 import WorkData from './WorkData';
 import bg from "../../assets/img/bg2.jpg";
 import Grid from "@material-ui/core/Grid";
+import { Card, CardContent } from "@material-ui/core";
 
 function Work() {
 
@@ -14,41 +15,61 @@ function Work() {
             height: 'auto'
         }}>
             <div>
-                <h1 className="col-12 text-center">Work</h1>
+                <h1 className="col-12  text-center">Work</h1>
             </div>
-            <Grid container spacing={1} style={{display: "flex", justifyContent: "center"}} >
-                {WorkData.map((data, index) => {
-                    return (
-                        <div className=" col-5 mb-5 " key={index}>
-                            <div style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", minHeight: "70vh",color: "white", padding: "20px"}}  className=" card text-center ">
-                                
-                                    <img
-                                        // className="col-10"
-                                        src={data.image}
-                                        alt={data.title}
-                                        style={{alignSelf: 'center', padding: "20px", height: "300px",width: "100%",  objectFit: "contain"}}
-                                    />
-                                    <p>{data.desc}</p>
-                                    <a href={data.app}
-                                        target={data.app}>
-                                        <div className="title ">
-                                            <h3>{data.title}</h3>
-                                            <p>{data.language}</p>
-                                        </div>
-                                    </a>
-                                    <div className="githubLink">
-                                        <a href={data.github}
-                                            target={data.github}>
-                                            <p className="githubText">Github Repo</p>
+            <Grid container spacing={5}  >
+                <Grid className="col-12"  item style={{display: "flex", justifyContent:"space-around", flexWrap:"wrap"}}>
+                    
+            {WorkData.map((data, index) => {
+                return (
+                    <Card className="col-5 mb-5" style={{ backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))", backgroundSize: "cover", color: "white", padding: "20px", alignContent: "center"}} >
+                    <div  key={index}>
+                    
+                    <CardContent style={{alignItems:"center"}}>
+                        
+                                <div style={{alignContent:"center"}}
+                                        >
+
+                                        <img
+                                            className="col-8 "
+                                            src={data.image}
+                                            alt={data.title}
+                                            style={{ alignSelf: 'center' }}
+                                        />
+                                        <p>{data.desc}</p>
+                                        <a href={data.app}
+                                            target={data.app}>
+                                            <button className="title col-8 mb-3">
+                                                <h3>{data.title}</h3>
+                                                <p>{data.language}</p>
+                                            </button>
                                         </a>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    )
-                })}
+                                        <button className="githubLink col-6"
+                                            style={{ alignSelf: 'center' }}>
+                                            <a href={data.github}
+                                                target={data.github}>
+                                                <p className="githubText">Github Repo</p>
+                                            </a>
+                                        </button>
+
+
+
+                                   
+                                </div>
+                                </CardContent>
+                    </div>
+                    
+                    </Card>
+                )
+
+            })}
+            
+            </Grid>
             </Grid>
         </div>
+
+
+
     )
 }
 

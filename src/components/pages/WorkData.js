@@ -5,6 +5,8 @@ import MusicJunkies from '../../assets/img/musicJunkies.PNG';
 import PasswordGenerator from '../../assets/img/passwordGenerator.PNG';
 import WeatherDashboard from '../../assets/img/weatherDashboard.PNG';
 import workDay from '../../assets/img/workDay.PNG';
+import codeQuiz from '../../assets/img/codeQuiz.PNG';
+import employeeDirectory from '../../assets/img/employeeDirectory.PNG';
 
 const WorkData = [
     {
@@ -63,7 +65,7 @@ const WorkData = [
     {
         title: "Employee Directory",
         language: "React",
-        image: workDay,
+        image: employeeDirectory,
         github: "https://github.com/JonGudenzi/Employee-Directory",
         app: "https://jongudenzi.github.io/Employee-Directory/",
         desc: "This application will show a list of employees with information for each one including an image, name, phone number, email and age. The user will be able to search for an employee by typing in a piece of the persons name which will filter out others. The user will also be able to sort by their name."
@@ -71,7 +73,7 @@ const WorkData = [
     {
         title: "React - Work Day Scheduler",
         language: "React",
-        image: Employee,
+        image: workDay,
         github: "https://github.com/JonGudenzi/Work-Day-Scheduler-React",
         app: "https://jongudenzi.github.io/Work-Day-Scheduler-React/",
         desc: "This is a work day scheduler that has been refactored using React. The app allows a user to set tasks for each hour of the day. These tasks will be saved in local storage so if the user leaves the page and returns later the tasks that were saved will still display."
@@ -95,7 +97,7 @@ const WorkData = [
     {
         title: "Code Quiz",
         language: "JavaScript",
-        image: Employee,
+        image: codeQuiz,
         github: "https://github.com/JonGudenzi/coding-quiz",
         app: "https://jongudenzi.github.io/coding-quiz/",
         desc: "This is a timed quiz. If you miss a question time will be deducted. When all questions are answered you can sign your name to the top scores list."
