@@ -7,7 +7,7 @@ import { Card, CardContent } from "@material-ui/core";
 function Work() {
 
     return (
-        <div className="img-responsive" style={{
+        <div style={{
             backgroundImage: `url(${bg})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',

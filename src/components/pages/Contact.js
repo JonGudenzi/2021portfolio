@@ -1,41 +1,74 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import ListGroup from "react-bootstrap/ListGroup";
 import bg from "../../assets/img/bg2.jpg";
 
-function Contact(props) {
+
+function Contact() {
   return (
-    <div style={{
-      backgroundImage: `url(${bg})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      width: '100vw',
-      height: '100vh'
-    }}>
+    <div
+    style={{ backgroundImage: `url(${bg})`, 
+    backgroundRepeat: 'no-repeat', 
+    backgroundSize: 'cover',
+    height: '100vh' }}>
+    
+    <Container className="col-lg-6  text-center">
       <h1 className="col-12 text-center">Contact Me</h1>
-      <div className="aboutFlexParent">
-        <div className="col-7 text-center aboutMe flexItems">
-          <div class="row justify-content-center my-row">
-          <div className="flexParent">
-            <div class="col-md-6 my-col">
-              <h1>Phone</h1>
-              <p>704-957-1641</p>
-            </div>
-            <div class="col-md-6 my-col">
-              <h1>Email</h1>
-              <a href="mailto:jongudenzi@gmail.com">jongudenzi@gmail.com</a>
-            </div>
-            <div class="col-md-6 my-col linkedIn">
-              <h1>LinkedIn</h1>
-              <a href="https://www.linkedin.com/in/jon-gudenzi-8338041b6/"
-                target="https://www.linkedin.com/in/jon-gudenzi-8338041b6/">Jon Gudenzi</a>
-            </div>
-            <div class="col-md-6 my-col github">
-              <h1>GitHub</h1>
-              <a href="https://github.com/JonGudenzi" target="https://github.com/JonGudenzi">JonGudenzi</a>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <ListGroup className="col-12 text-center">
+          <ListGroup.Item>
+            <i>Phone :</i>
+            <a
+              href="tel:704-957-1641"
+              target="_blank"
+              rel="noreferrer"
+              alt="Phone: 704-957-1641"
+              title="call"
+            >
+              <span> 704-957-1641</span>
+            </a>
+          </ListGroup.Item>
+
+          <ListGroup.Item>
+          <i>Email :</i>
+            <a 
+              href="mailto:jongudenzi@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              alt="email"
+              title="Click to launch email"
+              className="contact-link"
+            >
+              <span>jongudenzi@gmail.com</span>
+            </a>
+          </ListGroup.Item>
+          
+          <ListGroup.Item>
+            <i>Github : </i>
+            <a 
+              href="https://github.com/JonGudenzi"
+              target="_blank"
+              rel="noreferrer"
+              alt="Github"
+              title="Github"
+              >
+             <span>https://github.com/JonGudenzi</span>
+            </a>
+          </ListGroup.Item>
+
+          <ListGroup.Item>
+            <i>LinkedIn : </i>
+            <a
+              href="www.linkedin.com/in/jon-gudenzi"
+              target="_blank"
+              rel="noreferrer"
+              alt="linkedIn"
+              title="LinkedIn"
+            >
+              <span>www.linkedin.com/in/jon-gudenzi</span>
+            </a>
+          </ListGroup.Item>
+        </ListGroup>
+    </Container>
     </div>
   );
 }
