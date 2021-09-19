@@ -27,19 +27,16 @@ ul li:hover{
 .aboutFlexParent{
   display: flex;
   justify-content: center;
-  justify-content: space-around;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
- 
+  gap: 3rem;
 }
 
 .selfImg{
-  height: 200px;
   width: 200px;
-  flex-wrap: wrap;
   border-radius: 20px;
-  margin-right: 20px;
+  
 }
 
 .flexParent{

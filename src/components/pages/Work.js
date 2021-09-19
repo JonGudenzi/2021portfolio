@@ -17,26 +17,35 @@ function Work() {
             <div>
                 <h1 className="col-12  text-center">Work</h1>
             </div>
-            <Grid container>
+            <Grid container 
+            style={{
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                alignSelf: "center"
+            }}>
                 <Grid item
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        alignSelf: "center"
-                    }}>
+                   style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                    alignSelf: "center"
+                }} >
 
                     {WorkData.map((data, index) => {
                         return (
-                            <Card key={index} className="col-3 m-4"
+                            <Card key={index} className="col-3 m-4" 
                                 style={{
+                                    
+                                    display: "inline-block",
+                                    alignSelf: "center",
                                     backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))",
                                     backgroundSize: "cover",
                                     color: "white",
                                     padding: "20px"
                                 }} >
 
-                                <CardContent
+                                <CardContent 
                                     style={{
                                         display: 'flex',
                                         flexWrap: "wrap",
