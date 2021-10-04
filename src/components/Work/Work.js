@@ -1,5 +1,5 @@
 import React from "react";
-import WorkData from './WorkData';
+import WorkData from '../WorkData/WorkData';
 import bg from "../../assets/img/bg2.jpg";
 import Grid from "@material-ui/core/Grid";
 import { Card, CardContent } from "@material-ui/core";

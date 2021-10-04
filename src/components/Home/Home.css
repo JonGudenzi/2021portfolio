@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 1px 8px #00000040;
+    padding: 1rem;
+    min-height: 85vh;
+    border: 1px solid #ccc;
+    
+
+}
+

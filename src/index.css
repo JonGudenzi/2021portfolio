@@ -24,38 +24,6 @@ ul li:hover{
 
 }
 
-.aboutFlexParent{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.selfImg{
-  width: 200px;
-  border-radius: 20px;
-  
-}
-
-.flexParent{
-  width: fit-content;
-  word-wrap: break-word;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.aboutMe{
-  border: 3px solid black;
-  
-}
-
-
-
 
 
 
