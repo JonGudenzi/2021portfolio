@@ -1,19 +1,12 @@
 import React from "react";
 import WorkData from '../WorkData/WorkData';
-import bg from "../../assets/img/bg2.jpg";
 import Grid from "@material-ui/core/Grid";
 import { Card, CardContent } from "@material-ui/core";
 
 function Work() {
 
     return (
-        <div style={{
-            backgroundImage: `url(${bg})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            width: 'auto',
-            height: 'auto'
-        }}>
+        <div>
             <div>
                 <h1 className="col-12  text-center">Work</h1>
             </div>

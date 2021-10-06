@@ -2,11 +2,5 @@ body {
     background-image: url('../../assets/img/bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
 }
-
-.home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-

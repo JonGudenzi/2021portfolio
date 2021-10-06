@@ -1,16 +1,10 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import ListGroup from "react-bootstrap/ListGroup";
-import bg from "../../assets/img/bg2.jpg";
-
 
 function Contact() {
   return (
-    <div
-    style={{ backgroundImage: `url(${bg})`, 
-    backgroundRepeat: 'no-repeat', 
-    backgroundSize: 'cover',
-    height: '100vh' }}>
+    <div>
     
     <Container className="col-lg-6  text-center">
       <h1 className="col-12 text-center">Contact Me</h1>
