@@ -52,13 +52,13 @@ function Contact() {
           <ListGroup.Item>
             <i>LinkedIn : </i>
             <a
-              href="www.linkedin.com/in/jon-gudenzi"
+              href="https://www.linkedin.com/in/jon-gudenzi/"
               target="_blank"
               rel="noreferrer"
               alt="linkedIn"
               title="LinkedIn"
             >
-              <span>www.linkedin.com/in/jon-gudenzi</span>
+              <span>https://www.linkedin.com/in/jon-gudenzi/</span>
             </a>
           </ListGroup.Item>
         </ListGroup>
