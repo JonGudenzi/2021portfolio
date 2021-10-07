@@ -5,8 +5,7 @@ import HomeSelfImage from "./HomeSelfImage";
 
 function Home() {
   return (
-    <div
-      >
+    <div>
       <div className='home'>
         <div><HomeSelfImage /></div>
         <div><HomeAboutMe /></div>

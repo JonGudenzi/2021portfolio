@@ -1,0 +1,38 @@
+.slick-slider {
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.slides .slick-prev,
+.slides .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    align-content: center;
+}
+
+.slides {
+    position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+    
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    
+}
+
+.slides .slick-prev {
+    left: 10%;
+    
+}
+
+.slides .slick-next {
+    right: 10%;
+
+}

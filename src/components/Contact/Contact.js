@@ -4,8 +4,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 function Contact() {
   return (
-    <div>
     
+    <div>
     <Container className="col-lg-6  text-center">
       <h1 className="col-12 text-center">Contact Me</h1>
         <ListGroup className="col-12 text-center">
@@ -64,6 +64,7 @@ function Contact() {
         </ListGroup>
     </Container>
     </div>
+    
   );
 }
 

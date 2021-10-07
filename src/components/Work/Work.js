@@ -1,48 +1,60 @@
 import React from "react";
 import WorkData from '../WorkData/WorkData';
-import Grid from "@material-ui/core/Grid";
-import { Card, CardContent } from "@material-ui/core";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { Card } from "@material-ui/core";
+import './Work.css';
 
 function Work() {
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        arrows: true,
+        className: 'slides',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  initialSlide: 2
+                }
+            },
+        {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1 
+        }
+    }]
+      };
+
     return (
-        <div>
-            <div>
-                <h1 className="col-12  text-center">Work</h1>
-            </div>
-            <Grid container 
-            style={{
-                display: "flex",
-                justifyContent: "center",
-                flexWrap: "wrap",
-                alignSelf: "center"
-            }}>
-                <Grid item
-                   style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    alignSelf: "center"
-                }} >
+<div>
+        <div className="work" container justify = "center">
+            
+                <h1 className="col-12 text-center">Work</h1>
+            
+            <Slider {...settings}>
 
                     {WorkData.map((data, index) => {
                         return (
-                            <Card key={index} className="col-3 m-4" 
-                                style={{
-                                    
-                                    display: "inline-block",
-                                    alignSelf: "center",
-                                    backgroundImage: "linear-gradient(rgb(74, 101, 165)40%,rgb(62, 114, 117))",
-                                    backgroundSize: "cover",
-                                    color: "white",
-                                    padding: "20px"
-                                }} >
+                            
+                            <Card key={index} className="col-10 m-4">
 
-                                <CardContent 
+                                <div
                                     style={{
                                         display: 'flex',
                                         flexWrap: "wrap",
-                                        justifyContent: 'center'
+                                        justifyContent: "space-between",
+                                        
+                                        
                                     }}>
                                     <div className="row">
                                         <img className="col-12 mb-3"
@@ -93,12 +105,14 @@ function Work() {
                                             </button>
                                         </a>
                                     </div>
-                                </CardContent>
+                                </div>
                             </Card>
+                            
                         )
                     })}
-                </Grid>
-            </Grid>
+                    
+                    </Slider>
+        </div>
         </div>
     )
 }
