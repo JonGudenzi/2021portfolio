@@ -46,7 +46,7 @@ function Work() {
                     {WorkData.map((data, index) => {
                         return (
                             
-                            <Card key={index} className="col-12 m-4">
+                            <Card key={index} className="col-10 m-4">
 
                                 <div
                                     style={{
