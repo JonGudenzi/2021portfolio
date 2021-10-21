@@ -1,38 +1,29 @@
-.slick-slider {
-    width: 80%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+
+.cardDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #ccc;
+    /* margin-top: 50px; */
+    padding: 1rem;
+    /* margin: 50px; */
+    max-width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    /* font-size: 1.25rem; */
 }
 
 
-.slides .slick-prev,
-.slides .slick-next {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    align-content: center;
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40rem;
+    margin: 25px;
+    padding: 1rem;
 }
 
-.slides {
-    position: relative;
-}
-
-.slides .slick-prev,
-.slides .slick-next {
-    
-    position: absolute;
-    top: 0%;
-    z-index: 1;
-    
-}
-
-.slides .slick-prev {
-    left: 10%;
-    
-}
-
-.slides .slick-next {
-    right: 10%;
+.button{
+    background-color: black;
 
 }
