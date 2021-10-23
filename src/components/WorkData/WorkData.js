@@ -32,7 +32,7 @@ const WorkData = [
     },
     {
         title: "Weather Dashboard",
-        language: "APIs / JavaScript",
+        language: "APIs - JavaScript",
         image: WeatherDashboard,
         github: "https://github.com/JonGudenzi/weather_dashboard",
         app: "https://jongudenzi.github.io/weather_dashboard/",
@@ -41,7 +41,7 @@ const WorkData = [
     },
     {
         title: "Work Day Schedule",
-        language: "MomentJS / Jquery",
+        language: "MomentJS - Jquery",
         image: workDay,
         github: "https://github.com/JonGudenzi/Work_Day_Scheduler",
         app: "https://jongudenzi.github.io/Work_Day_Scheduler/",
@@ -59,7 +59,7 @@ const WorkData = [
     },
     {
         title: "Music Junkies",
-        language: "APIs / Jquery",
+        language: "APIs - Jquery",
         image: MusicJunkies,
         github: "https://github.com/JonGudenzi/MusicJunkies",
         app: "https://nsc9605.github.io/MusicJunkies/#modalIntro",
@@ -76,7 +76,7 @@ const WorkData = [
     },
     {
         title: "Workout Tracker",
-        language: "MongoDB, NoSql, Mongoose, Express-js",
+        language: "MongoDB - NoSql - Mongoose - Express-js",
         image: fitnessTracker,
         github: "https://github.com/JonGudenzi/Workout-Tracker",
         app: "https://workout-tracker-gudenzi.herokuapp.com/?id=603d6e7d60a1570015f33680",
@@ -84,7 +84,7 @@ const WorkData = [
     },
     {
         title: "Note Taker",
-        language: "Node-js, heroku, database, express",
+        language: "Node-js - heroku - database - express",
         image: noteTaker,
         github: "https://github.com/JonGudenzi/Note-Taker",
         app: "https://note-taker-jongudenzi.herokuapp.com/",

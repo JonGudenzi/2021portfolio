@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WorkData from '../WorkData/WorkData';
-import {  Card, CardMedia, Button, CardActions,  CardContent } from "@material-ui/core";
+import { Card, CardMedia, Button, CardActions, CardContent, Typography } from "@material-ui/core";
 import 'font-awesome/css/font-awesome.min.css';
 // import ReactCardFlip from 'react-card-flip';
 import './Work.css';
@@ -19,50 +19,52 @@ function Work() {
                     return (
 
                         <Card className="card" key={index}>
-
-                            <CardMedia  className="img"
+                            <h2>{data.title}</h2>
+                            <CardMedia className="img"
                                 component="img"
                                 image={data.image}
                                 alt={data.image}
                                 height="230"
                             />
+                            <h6>{data.language}</h6>
 
                             <CardContent className="content">
                                 {/* <Typography  gutterBottom variant="body1">
                                     {data.desc}
                                 </Typography> */}
-                            
 
-                            <CardActions>
-                            <Button className="githubIcon" href={data.app}>
-                                
-                            <i className="fa fa-desktop" style={{fontSize:40}}></i> <p className="buttonName"> Application </p>
-                            </Button>
-                            </CardActions>
 
-                            <CardActions>
-                            <Button className="githubIcon" href={data.github}>
-                            <i className="fa fa-github" style={{fontSize:48}}></i> <p className="buttonName"> Github </p>
-                            </Button>
-                            
-                            </CardActions>
 
-                            <CardActions>
-                            <Button>
-                            <i className="fa fa-book" style={{fontSize:48}}></i> <p className="buttonName"> Description </p>
-                            </Button>
+                                <CardActions>
+                                    <Button className="githubIcon" href={data.app}>
 
-                            
-                            
-                            </CardActions>
+                                        <i className="fa fa-desktop" style={{ fontSize: 40 }}></i> <p className="buttonName"> Application </p>
+                                    </Button>
+                                </CardActions>
+
+                                <CardActions>
+                                    <Button className="githubIcon" href={data.github}>
+                                        <i className="fa fa-github" style={{ fontSize: 48 }}></i> <p className="buttonName"> Github </p>
+                                    </Button>
+
+                                </CardActions>
+
+                                <CardActions>
+                                    <Button>
+                                        <i className="fa fa-book" style={{ fontSize: 48 }}></i> <p className="buttonName"> Description </p>
+                                    </Button>
+
+
+
+                                </CardActions>
                             </CardContent>
 
-                            
+
 
 
                         </Card>
-                       
-                        
+
+
                     )
                 })}
 
