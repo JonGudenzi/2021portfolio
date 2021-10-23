@@ -2,11 +2,17 @@ import React, { useState } from "react";
 import WorkData from '../WorkData/WorkData';
 import { Card, CardMedia, Button, CardActions, CardContent, Typography } from "@material-ui/core";
 import 'font-awesome/css/font-awesome.min.css';
-// import ReactCardFlip from 'react-card-flip';
+import ReactCardFlip from 'react-card-flip';
 import './Work.css';
 
 
 function Work() {
+
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const clickHandler = () => {
+        setIsFlipped(!isFlipped);
+    }
 
     return (
         <div>
@@ -18,51 +24,73 @@ function Work() {
 
                     return (
 
-                        <Card className="card" key={index}>
+
+                        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+                            
+                            <Card className="card" key={index}>
                             <h2>{data.title}</h2>
                             <CardMedia className="img"
-                                component="img"
-                                image={data.image}
-                                alt={data.image}
-                                height="230"
+                            component="img"
+                            image={data.image}
+                            alt={data.image}
+                            height="230"
                             />
                             <h6>{data.language}</h6>
 
                             <CardContent className="content">
-                                {/* <Typography  gutterBottom variant="body1">
-                                    {data.desc}
-                                </Typography> */}
 
 
 
-                                <CardActions>
-                                    <Button className="githubIcon" href={data.app}>
+                            <CardActions>
+                            <Button className="githubIcon" href={data.app}>
 
-                                        <i className="fa fa-desktop" style={{ fontSize: 40 }}></i> <p className="buttonName"> Application </p>
-                                    </Button>
-                                </CardActions>
+                            <i className="fa fa-desktop" style={{ fontSize: 40 }}></i> <p className="buttonName"> Application </p>
+                            </Button>
+                            </CardActions>
 
-                                <CardActions>
-                                    <Button className="githubIcon" href={data.github}>
-                                        <i className="fa fa-github" style={{ fontSize: 48 }}></i> <p className="buttonName"> Github </p>
-                                    </Button>
+                            <CardActions>
+                            <Button className="githubIcon" href={data.github}>
+                            <i className="fa fa-github" style={{ fontSize: 48 }}></i> <p className="buttonName"> Github </p>
+                            </Button>
 
-                                </CardActions>
+                            </CardActions>
 
-                                <CardActions>
-                                    <Button>
-                                        <i className="fa fa-book" style={{ fontSize: 48 }}></i> <p className="buttonName"> Description </p>
-                                    </Button>
+                            <CardActions>
+                            <Button onClick={clickHandler}>
+                            <i className="fa fa-book" style={{ fontSize: 48 }}></i> <p className="buttonName"> Description </p>
+                            </Button>
 
 
 
-                                </CardActions>
+                            </CardActions>
+
+                            
+
+
                             </CardContent>
 
 
 
 
-                        </Card>
+                            </Card>
+
+                            <div className="work cardDiv" justify="center">
+
+                            <Card className="card">
+
+                            <Typography  gutterBottom variant="body1">
+                        {data.desc}
+                            </Typography>
+
+                            <Button onClick={clickHandler}>
+                            <i className="fa fa-chevron-left" style={{ fontSize: 48 }}></i>
+                            </Button>
+
+                            </Card>
+                            </div>
+
+
+                        </ReactCardFlip>
 
 
                     )
