@@ -14,16 +14,27 @@
     /* font-size: 1.25rem; */
 }
 
+.img{
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
 
 .card{
     display: flex;
     flex-wrap: wrap;
-    max-width: 40rem;
+    max-width: 25rem;
     margin: 25px;
     padding: 1rem;
+    
 }
 
-.button{
-    background-color: black;
+.buttonName{
+    margin-left: 15px;
+}
 
+.content{
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }

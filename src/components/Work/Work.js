@@ -1,53 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import WorkData from '../WorkData/WorkData';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import {  Card, CardMedia, Button, CardActions, Typography, CardContent } from "@material-ui/core";
-import githubIcon from '../../assets/img/GitHub-Mark-120px-plus.png';
-
+import {  Card, CardMedia, Button, CardActions,  CardContent } from "@material-ui/core";
+import 'font-awesome/css/font-awesome.min.css';
+// import ReactCardFlip from 'react-card-flip';
 import './Work.css';
-// import { Container } from "react-bootstrap";
+
 
 function Work() {
 
-
-
     return (
         <div>
-            <div className="work cardDiv" container justify="center">
+            <div className="work cardDiv" justify="center">
 
                 <h1 className="col-12 text-center">Work</h1>
 
-
-               
-
                 {WorkData.map((data, index) => {
+
                     return (
 
-    
                         <Card className="card" key={index}>
 
-                            <CardMedia
+                            <CardMedia  className="img"
                                 component="img"
                                 image={data.image}
                                 alt={data.image}
-                                height="220"
+                                height="230"
                             />
 
-                            <CardContent>
-                                <Typography gutterBottom variant="p" component="div">
+                            <CardContent className="content">
+                                {/* <Typography  gutterBottom variant="body1">
                                     {data.desc}
-                                </Typography>
-                            </CardContent>
+                                </Typography> */}
+                            
 
                             <CardActions>
-                                <Button size="large" href={data.app}>Application</Button>
-                                <link 
-                                rel={githubIcon}
-                                type="image/png"
-                                src="../../assets/img/GitHub-Mark-120px-plus.png"
-                                 href={data.github} />
+                            <Button className="githubIcon" href={data.app}>
+                                
+                            <i className="fa fa-desktop" style={{fontSize:40}}></i> <p className="buttonName"> Application </p>
+                            </Button>
                             </CardActions>
+
+                            <CardActions>
+                            <Button className="githubIcon" href={data.github}>
+                            <i className="fa fa-github" style={{fontSize:48}}></i> <p className="buttonName"> Github </p>
+                            </Button>
+                            
+                            </CardActions>
+
+                            <CardActions>
+                            <Button>
+                            <i className="fa fa-book" style={{fontSize:48}}></i> <p className="buttonName"> Description </p>
+                            </Button>
+
+                            
+                            
+                            </CardActions>
+                            </CardContent>
+
+                            
 
 
                         </Card>
