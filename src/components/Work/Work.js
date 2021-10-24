@@ -28,13 +28,15 @@ function Work() {
                         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                             
                             <Card className="card" key={index}>
-                            <h2>{data.title}</h2>
+                            <h1>{data.title}</h1>
+
                             <CardMedia className="img"
                             component="img"
                             image={data.image}
                             alt={data.image}
                             height="230"
                             />
+
                             <h6>{data.language}</h6>
 
                             <CardContent className="content">
@@ -77,6 +79,8 @@ function Work() {
                             <div className="work cardDiv" justify="center">
 
                             <Card className="card">
+
+                            <h1>{data.title}</h1>
 
                             <Typography  gutterBottom variant="body1">
                         {data.desc}
