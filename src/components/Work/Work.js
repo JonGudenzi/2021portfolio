@@ -6,7 +6,7 @@ import ReactCardFlip from 'react-card-flip';
 import './Work.css';
 
 
-function Work() {
+const Work = () => {
 
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -17,7 +17,6 @@ function Work() {
     return (
         <div>
             <div className="work cardDiv" justify="center">
-
                 <h1 className="col-12 text-center">Work</h1>
 
                 {WorkData.map((data, id) => {
@@ -25,7 +24,7 @@ function Work() {
                     return (
                         <ReactCardFlip key={id} isFlipped={isFlipped} flipDirection="horizontal">
 
-                            <Card className="card" >
+                            <Card className="card">
                                 <h3>{data.title}</h3>
 
                                 <CardMedia className="img"

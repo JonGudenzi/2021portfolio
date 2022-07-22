@@ -9,18 +9,18 @@ function NavTabs() {
   const location = useLocation();
 
   return (
-<div className='nav' style={{ backgroundColor: "black", display: "flex", flexwrap: "wrap"}}>
-<div className="nav-links">
-    <h1 style={{ color: "rgb(94, 240, 215)", textAlign: "left" }}>Jon Gudenzi</h1>
-    </div>
+    <div className='nav' style={{ backgroundColor: "black", display: "flex", flexwrap: "wrap" }}>
+      <div className="nav-links">
+        <h1 style={{ color: "rgb(94, 240, 215)", textAlign: "left" }}>Jon Gudenzi</h1>
+      </div>
 
-    <Navbar className='nav-wrap'>
+      <Navbar className='nav-wrap'>
         <Nav className="nav-item">
           <Link style={{ color: "white", fontSize: '21px' }} to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
             Home
           </Link>
         </Nav>
-        
+
         <Nav className="nav-item">
           <Link style={{ color: "white", fontSize: '21px' }}
             to="/work"
@@ -36,10 +36,10 @@ function NavTabs() {
           >
             Contact
           </Link>
-          </Nav>
-          <Nav className="nav-item">
+        </Nav>
+        <Nav className="nav-item">
           <Link style={{ color: "white", fontSize: '21px' }}
-to={resume}
+            to={resume}
             className={
               location.pathname === "/resume" ? "nav-link active" : "nav-link"
             }
@@ -51,9 +51,9 @@ to={resume}
 
           </Link>
         </Nav>
-     
-    </Navbar>
-    
+
+      </Navbar>
+
     </div>
   );
 }

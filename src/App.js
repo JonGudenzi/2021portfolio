@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
 import Home from "./components/Home/Home";
@@ -8,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
+
     <Router>
 
       <div>
