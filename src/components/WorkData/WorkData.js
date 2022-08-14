@@ -13,7 +13,7 @@ import ExpenseTracker from '../../assets/img/ExpenseTracker.PNG';
 import AceOfKeys from '../../assets/img/AceOfKeys.PNG';
 
 
-export const WorkData = [
+const WorkData = [
     {
         id: 1,
         title: "Password Generator",
