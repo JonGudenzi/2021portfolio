@@ -12,35 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  flex: auto;
-}
-
-.nav {
-  gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav-wrap {
-  gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav-item {
-  background-color: #40005d;
-  border: 1px solid white;
-  border-radius: 12px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav-item:hover {
-  border: 1.5px solid rgb(94, 240, 215);
-
-}

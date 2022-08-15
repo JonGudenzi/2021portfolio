@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavTabs from "./components/NavTabs";
+import Nav from "./components/Nav/Nav";
 import Home from "./components/Home/Home";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
@@ -11,7 +11,7 @@ function App() {
     <Router>
 
       <div>
-        <NavTabs />
+        <Nav />
         <Switch>
           <Route exact path={["/", "/2021portfolio"]} component={Home} />
           <Route exact path="/work" component={Work} />

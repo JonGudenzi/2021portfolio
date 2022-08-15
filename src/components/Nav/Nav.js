@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../index.css";
-import resume from "../assets/Resume.pdf";
+import "../Nav/Nav.css";
+import resume from "../../assets/Resume.pdf";
 import { Nav, Navbar } from "react-bootstrap";
 
 
@@ -9,9 +9,9 @@ function NavTabs() {
   const location = useLocation();
 
   return (
-    <div className='nav' style={{ backgroundColor: "black", display: "flex", flexwrap: "wrap" }}>
+    <div className='nav'>
       <div className="nav-links">
-        <h1 style={{ color: "rgb(94, 240, 215)", textAlign: "left" }}>Jon Gudenzi</h1>
+        <h1 className="name">Jon Gudenzi</h1>
       </div>
 
       <Navbar className='nav-wrap'>
