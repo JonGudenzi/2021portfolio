@@ -1,4 +1,3 @@
-import React from "react";
 import '../Home/Home.css';
 import HomeAboutMe from "./HomeAboutMe";
 import HomeSelfImage from "./HomeSelfImage";

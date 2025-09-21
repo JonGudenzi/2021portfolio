@@ -1,4 +1,3 @@
-import React from "react";
 import selfImg from "../../assets/img/portfolio_picture.jpg";
 import './HomeSelfImage.css';
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../Nav/Nav.css";
 import resume from "../../assets/Resume.pdf";
